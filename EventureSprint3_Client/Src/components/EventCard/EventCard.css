@@ -1,0 +1,140 @@
+.event--default {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  height: auto;
+}
+@media screen and (min-width: 700px) {
+  .event--default {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 23.4375rem) {
+  .event--default {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 700px) {
+  .event--default {
+    width: 32.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .event--default {
+    width: 64rem;
+  }
+}
+@media screen and (max-width: 23.4375rem) {
+  .event--default {
+    width: 17.9375rem;
+  }
+}
+.event--default .EventCard_Detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.event--default .EventCard_Detail h3 {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+.event--default .EventCard_Detail .eventTime {
+  margin: 0px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 140%;
+}
+.event--default .EventCard_Detail .eventDetail {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #757575;
+}
+.event--default .EventCard_Detail .Buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: auto;
+}
+@media screen and (max-width: 23.4375rem) {
+  .event--default .EventCard_Detail .Buttons {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 23.4375rem) {
+  .event--default .EventCard_Detail .Buttons {
+    margin-right: auto;
+    margin-left: auto;
+    width: 17.9375rem;
+  }
+}
+.event--default .EventCard_Detail .Buttons .learnButton {
+  color: #566AD9;
+  background: #FFFFFF;
+  white-space: nowrap;
+}
+.event--default .EventCard_Detail .Buttons .registerButton {
+  background: #566AD9;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+.event--manage-attending {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.375rem;
+}
+.event--manage-attending .EventCard_Detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 86.84%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.event--manage-attending .EventCard_Detail h3 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+.event--manage-attending .EventCard_Detail .eventTime {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.event--manage-attending .EventCard_Detail .eventDetail {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #757575;
+}
+.event--manage-attending .Buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  gap: 1rem;
+}/*# sourceMappingURL=EventCard.css.map */
