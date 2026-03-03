@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+@use "../../styles/mixins" as *;
+
+.RB {
+  padding: 11px 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #566AD9;
+  border:1px solid red;
+
+}

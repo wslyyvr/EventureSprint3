@@ -1,0 +1,208 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+@use "../../styles/mixins" as *;
+
+.rsvp-title{              
+  color: white;  
+  text-align: center;
+  //font-size: pxToRem(48);
+   @media screen and (max-width: pxToRem(380)) {
+        font-size: pxToRem(40);
+    }
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.rsvp-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;         
+  font-style: normal;       
+  font-size: 24px;
+  line-height: 1.2;         
+  letter-spacing: -0.02em;  
+  text-align: center;
+  color: white; 
+  //border: 1px solid yellow;  
+  margin-bottom: 0 !important;
+
+}
+.rsvp-date{
+  font-family: 'Inter', sans-serif;  
+  font-weight: 600;                  
+  font-style: normal;                
+  font-size: 24px;                   
+  //line-height: 1.2;                  
+  letter-spacing: -0.02em;           
+  text-align: center;                
+  color: white;
+  //border: 1px solid yellow;                         
+  margin-top: pxToRem(-16);
+}
+.rsvp-top_buttom{
+    margin-top: pxToRem(93);
+    margin-left: auto;
+    margin-right: auto;
+    width: 74.65%;
+    //border: 1px solid red;
+    .rsvp-back_buttom{
+        background-color: white;
+        color:  #566AD9;
+    };
+   
+}
+.rsvp-list{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: pxToRem(31);
+    margin-bottom:  pxToRem(118);
+    width: 74.65%;
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    table {
+        
+        width: 100%;
+        table-layout: fixed; 
+        border-collapse: collapse;
+        border-top: 1px solid #D9D9D9;
+        border-left: 1px solid #D9D9D9;
+        border-right: 1px solid #D9D9D9;
+        border-bottom: none;
+        td {
+          font-family: 'Inter', sans-serif;  
+          font-weight: 600;                  
+          font-style: normal;
+          font-size: pxToRem(16);               
+          line-height: 1.4;                 
+          letter-spacing: 0;
+          //padding: 8px 12px;    
+          border-bottom: 1px solid #D9D9D9;
+          //border-right: 1px solid #D9D9D9;
+        }
+         tr:last-child td {
+             border-bottom: none ;
+        }
+         td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+            width: 16.36%;
+            white-space: normal; 
+            word-break: break-all;       
+            overflow-wrap: break-word;   
+          } 
+
+            
+          td:nth-child(5){
+            text-align: right;
+            
+          }
+          @media screen and (max-width: pxToRem(768)) {
+            td:nth-child(4){
+               text-align: right;
+            }
+            td:nth-child(5) {
+              display: none;
+            }
+          }
+
+
+        .attending-block {
+            display: inline-flex;    
+            flex-direction: row;
+            gap: pxToRem(8); 
+            .checkmark-block {
+              display: flex;              
+              align-items: center;
+              justify-content: center;
+              width: pxToRem(24);          
+              height: pxToRem(24);
+              background-color: #566AD9;   
+              border-radius: pxToRem(5);   
+            }
+
+            .checkmark {
+              width: pxToRem(10.67);           
+              height: pxToRem(7.33);
+              border-left: 2px solid white;
+              border-bottom: 2px solid white;
+              transform: rotate(-45deg);
+            }
+                 
+          }
+
+  
+
+        }
+
+        .personAvatar {
+          width: pxToRem(36);
+          border-radius: 50%;
+          object-fit: cover;
+        }
+  }
+
+  @media screen and (max-width: pxToRem(380)) {
+  .rsvp-list table {
+    display: block; 
+    width: 100%;
+    
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: block;  
+      margin-bottom: pxToRem(16); 
+      border-bottom: 1px solid #D9D9D9;
+
+      //border-bottom: 1px solid #D9D9D9; 
+      &:last-child {
+        border-bottom: none; 
+      }
+
+      td {
+        display: block; 
+        width: 100%;
+        padding: pxToRem(4) 0; 
+        
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          display: inline-block; 
+          width: 50%;
+          white-space: normal;
+          word-break: break-word;
+          border-bottom: none;
+        }
+
+        &:nth-child(3) {
+          display: block;
+          width: 100%;
+          word-break: break-all;
+          overflow-wrap: break-word;
+          margin-top: pxToRem(4);
+          border-bottom: none;
+        }
+
+         &:nth-child(4) {
+          display: flex;
+          align-items: center;
+          gap: pxToRem(8);
+          margin-top: pxToRem(4);
+          .checkmark-block {
+            order: -1; // for change icon order ---display first 
+          }
+          .attending-block {
+            white-space: nowrap; 
+          }
+    }
+
+        &:nth-child(5) {
+          display: none; 
+        }
+
+      }
+    }
+  }
+}
