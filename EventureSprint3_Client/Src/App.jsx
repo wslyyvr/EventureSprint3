@@ -15,11 +15,13 @@ const App = () => {
 const [events, setEvents] = useState([]);
 const [attendees, setAttendees] = useState([]);
 useEffect(() => {
-    axios.get("https://unit-3-api-6b6268be0363.herokuapp.com/events", {
-        params: { api_key: "1" },
-      })
+   //conect with local server
+    axios.get("http://localhost:5050/events")
       .then((response) => {
         setEvents(response.data);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch events from server:", err);
       });
   }, []);
 

@@ -13,20 +13,12 @@ import "./EventListPage.scss";
 //get data form API
 const fetchAttendeeByEmail = async (email) => {
   try {
-    const response = await axios.get(
-      "https://unit-3-api-6b6268be0363.herokuapp.com/attendees",
-      { params: { api_key: "2" } }
-    );
-
-    const allAttendees = response.data;
-
-    const targetAttendee = allAttendees.find(
-      (attendee) => attendee.email === email
-    );
-
-    return targetAttendee || null;
+    const response = await axios.get("http://localhost:5050/attendees", {
+      params: { email },
+    });
+    return response.data || null;
   } catch (error) {
-    console.error("API error info:", error);
+    console.error("Server API error:", error);
     return null;
   }
 };
