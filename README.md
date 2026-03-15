@@ -46,7 +46,8 @@ npm start
 ## Project Purpose
 
 This project demonstrates the development of a modern web application using the React framework.
-It focuses on user interaction, event registration functionality, and managing user participation in community events.
+It focuses on user interaction, event registration functionality, managing user participation in community events, 
+and supporting responsive display across multiple screen sizes.
 
 ## Author
 
