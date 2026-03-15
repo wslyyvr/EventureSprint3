@@ -50,7 +50,6 @@ It focuses on user interaction, event registration functionality, and managing u
 
 ## Author
 
-Shilong Wang
+Mike Wang
 
-GitHub: https://github.com/wslyvr
-LinkedIn: https://www.linkedin.com/in/shilong-wang-ca
+
